@@ -1,5 +1,9 @@
 # asyncapi-examples
 
+# asyncapi generator 
+
+https://github.com/asyncapi/java-spring-cloud-stream-template
+
 # update-examples
 
 remove all examples manuel and run

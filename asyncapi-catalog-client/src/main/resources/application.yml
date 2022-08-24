@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    function:
+      definition: CatalogEvent;ProductEvent
+    stream:
+      bindings:
+        CatalogEvent-in-0:
+          destination: finetech.sales.catalog
+        ProductEvent-in-0:
+          destination: finetech.sales.product
+logging:
+  level:
+    root: info
+    org:
+      springframework: info
+

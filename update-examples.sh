@@ -1,3 +1,6 @@
+
+rm -r asyncapi-catalog-provider
+
 ag \
 -o asyncapi-catalog-provider \
 -p springBootVersion=2.7.4-SNAPSHOT \
@@ -7,6 +10,10 @@ ag \
 https://raw.githubusercontent.com/finetech-dk/specs/main/asyncapi-catalog.yaml \
 @asyncapi/java-spring-cloud-stream-template
 
+git add .
+
+rm -r asyncapi-catalog-client
+
 ag \
 -o asyncapi-catalog-client \
 -p springBootVersion=2.7.4-SNAPSHOT \
@@ -15,3 +22,5 @@ ag \
 -p view=client \
 https://raw.githubusercontent.com/finetech-dk/specs/main/asyncapi-catalog.yaml \
 @asyncapi/java-spring-cloud-stream-template
+
+git add .
